@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session | Synq Studios</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0d0d0d;
+            color: #f1f1f1;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #d4af37;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #444;
+            background-color: #1e1e1e;
+            color: #fff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 12px;
+            background-color: #6a0dad;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8e2be2;
+        }
+        .policy {
+            margin-top: 40px;
+            font-size: 0.95em;
+            color: #ccc;
+        }
+        .policy h3 {
+            color: #d4af37;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Synq Studios Booking</h1>
+    </header>
+    <div class="container">
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required>
+
+            <label for="phone">Phone (optional)</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="service">Service Type</label>
+            <select id="service" name="service">
+                <option>Recording</option>
+                <option>Mixing</option>
+                <option>Mastering</option>
+                <option>Full Session</option>
+            </select>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="length">Session Length</label>
+            <select id="length" name="length">
+                <option>1 hour</option>
+                <option>2 hours</option>
+                <option>Half-day</option>
+                <option>Full-day</option>
+            </select>
+
+            <label for="notes">Notes / Special Requests</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <div class="policy">
+            <h3>Studio Policies</h3>
+            <ul>
+                <li>A deposit is required to confirm your booking. Payment link will be provided upon request.</li>
+                <li>Cancellations made less than 24 hours in advance will incur a cancellation fee.</li>
+                <li>Please arrive on time. Sessions that start late may still end at the scheduled time.</li>
+                <li>Respect the space, equipment, and staff—no smoking, no illegal substances, and no excessive guests.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Synq Studios. All rights reserved.
+    </div>
+</body>
+</html>
